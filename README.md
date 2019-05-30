@@ -1,5 +1,7 @@
-# Ejabberd Connector 
+# Ejabberd Connector
 This is used to control an Ejabberd server over http REST using a node.js server.
+
+Original source code from https://www.npmjs.com/package/ejabberd-connector
 
 
 ## API Documentation
@@ -9,7 +11,7 @@ The requests are authenticated using a secret passed in the query parameters:
 
 POST http://{server address}/check-account:
 * Input -- Json body with a single array parameter named "args".  The array should have 2 arguments -- user and host.
- 
+
 	POST http://heads.com:7564/check-account?id="secretAPICode"
 	{
 		"args" : [
@@ -26,8 +28,8 @@ POST http://{server address}/check-account:
 
 POST http://{server address}/check-password:
 * Input -- Json body with a single array parameter named "args".  The array should have 3 arguments -- user, host, and password.
-	
-	POST http://heads.com:7564/check-password?id="secretAPICode" 
+
+	POST http://heads.com:7564/check-password?id="secretAPICode"
 	{
 		"args" : [
 			"butts",
@@ -44,7 +46,7 @@ POST http://{server address}/check-password:
 
 POST http://{server address}/change-password:
 * Input -- Json body with a single array parameter named "args".  The array should have 3 arguments -- user, host, and new password.
- 
+
 	POST http://heads.com:7564/change-password?id="secretAPICode"
 	{
 		"args" : [
@@ -53,7 +55,7 @@ POST http://{server address}/change-password:
 			"secretOfTheButts"
 		]
 	}
-	
+
 * Output -- Json body with a single boolean "response" variable indicating if the password was successfully changed.
 
 	{
