@@ -1,8 +1,9 @@
+#!/usr/bin/env node
 // # server.js
 // Creates a server that connects with ejabberd
-// 
+//
 
-var connector = require("../index.js");
+var connector = require(".");
 
 var port = 8082;
 var path = "";

@@ -1,38 +1,14 @@
 {
-  "_from": "ejabberd-connector",
-  "_id": "ejabberd-connector@0.0.3",
-  "_inBundle": false,
-  "_integrity": "sha1-KQnoNpItIsw79DMVHXXTamK+w6Y=",
-  "_location": "/ejabberd-connector",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "ejabberd-connector",
-    "name": "ejabberd-connector",
-    "escapedName": "ejabberd-connector",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/ejabberd-connector/-/ejabberd-connector-0.0.3.tgz",
-  "_shasum": "2909e836922d22cc3bf433151d75d36a62bec3a6",
-  "_spec": "ejabberd-connector",
-  "_where": "/home/piranna/Trabajo/lingbe",
   "bundleDependencies": false,
   "dependencies": {
     "express": "3.x"
   },
   "deprecated": false,
-  "description": "Connects to ejabberd through the console application.  ",
+  "description": "Connects to ejabberd through the console application",
   "engines": {
     "node": "*"
   },
-  "main": "index.js",
+  "main": "lib",
   "maintainers": [
     {
       "name": "William Burke",
